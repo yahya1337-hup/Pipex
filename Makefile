@@ -2,7 +2,7 @@ CC = cc
 CFLAGS = -Wall -Wextra -Werror
 RM = rm -rf
 
-SRCS = pipex.c check_input.c find_cmd.c ft_split.c ft_strtrim.c help.c utils.c utils_2.c 
+SRCS = pipex.c check_input.c find_cmd.c ft_split.c help.c utils.c utils_2.c 
 
 OBJS = ${SRCS:.c=.o}
 
@@ -24,4 +24,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all fclean re bonus clean
+.PHONY: all fclean re clean
